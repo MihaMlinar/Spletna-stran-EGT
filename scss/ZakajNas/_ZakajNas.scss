@@ -1,0 +1,73 @@
+.ZakajZaupatiNam {
+  width: 100%;
+  height: auto;
+  padding: 2rem;
+  background-color: #f7f7f7;
+}
+
+.ZakajNas {
+  display: flex;
+  // flex-direction: row;
+
+  &__textContainer {
+    padding: 0 2rem;
+    width: 50%;
+
+    &--text {
+      text-align: left;
+      font-size: 1.6rem;
+    }
+  }
+
+  &__imgContainer {
+    margin: 0 auto;
+
+    &--img {
+      width: 20rem;
+      height: auto;
+    }
+
+    figcaption {
+      text-align: center;
+      font-size: 1.7rem;
+      font-weight: bold;
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .ZakajNas {
+    @include centering;
+    flex-direction: column;
+
+    &__textContainer {
+      order: 2;
+      padding: 0 2rem;
+      width: 100%;
+
+      &--text {
+        text-align: center;
+        font-size: 1.6rem;
+      }
+    }
+
+    &__imgContainer {
+      order: 1;
+      width: 100%;
+      margin: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      &--img {
+        width: 20rem;
+        height: auto;
+      }
+
+      figcaption {
+        font-size: 1.6rem;
+        font-weight: bold;
+      }
+    }
+  }
+}

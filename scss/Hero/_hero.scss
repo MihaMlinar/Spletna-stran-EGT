@@ -1,0 +1,47 @@
+.hero {
+  background-image: linear-gradient(
+    -60deg,
+    rgba($primaryColor, 0.3) 50%,
+    rgba($primaryColor, 1) 50%
+  );
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+  height: 30vh;
+  letter-spacing: 0.3rem;
+
+  &__textContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgba(#777, 1);
+    color: white;
+    box-shadow: 0 0 0.25em rgba(0, 0, 0, 0.25);
+    padding: 1rem 1rem;
+    width: 65rem;
+    max-width: 100%;
+    border-radius: 0.25rem;
+    text-transform: uppercase;
+
+    &--text {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    &--firm {
+      font-size: 2rem;
+      align-self: flex-end;
+      position: relative;
+      right: 0;
+      font-weight: bold;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .hero__textContainer--firm {
+    display: none;
+  }
+}

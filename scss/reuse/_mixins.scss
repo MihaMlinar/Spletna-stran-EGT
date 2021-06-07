@@ -1,0 +1,32 @@
+// primer
+// @mixin transform($property) {
+//     -webkit-transform: $property;
+//     -ms-transform: $property;
+//     transform: $property;
+//   }
+//   .box { @include transform(rotate(30deg)); } --wher you want to use it
+
+@mixin navBG {
+  background-image: url("../../img/wave_light.svg"),
+    url("../../img/wave_strong.svg");
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@mixin centering {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin dropDownArrowBorder {
+  position: absolute;
+  right: 1rem;
+}
+
+@mixin dropDownArrow($color) {
+  color: $color;
+  transition: transform 0.2s;
+}

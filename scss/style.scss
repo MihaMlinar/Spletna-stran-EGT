@@ -1,0 +1,45 @@
+@import "./reuse/globalVariables";
+@import "./reuse/mixins";
+@import "./reuse/extend";
+@import "./reuse/tipografija";
+@import "./reuse/utils";
+
+@import "./navigation/navigation";
+@import "./contactBar/contactBar";
+@import "./storitve/storitve";
+@import "./rešitve/rešitve";
+@import "./predstavitev/predstavitev";
+@import "./ZakajNas/ZakajNas";
+@import "./zaupanje/zaupanje";
+@import "./footer/footer";
+@import "./footer/pravnoObvestilo";
+@import "./footer/politikaZasebnosti";
+@import "./hero/hero";
+
+// global style
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  width: 100%;
+  margin: 0 auto;
+  background-color: rgba($textColor, 0.1);
+}
+
+#header,
+#contactBar,
+#main,
+#kontakt {
+  max-width: 120rem;
+  margin: 0 auto;
+}

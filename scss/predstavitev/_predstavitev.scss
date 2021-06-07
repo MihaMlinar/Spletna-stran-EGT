@@ -1,0 +1,106 @@
+.predstavitev {
+  width: 100%;
+  background-color: #fff;
+  padding: 2rem 0;
+
+  &__content {
+    display: block;
+    margin: 0 auto;
+    background-color: #777;
+    width: 100%;
+    max-width: 50rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+
+    &--icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #fff;
+      width: 2rem;
+      height: 2rem;
+      padding: 1.5rem;
+      margin: 0 1rem;
+    }
+
+    &--introText {
+      font-size: 2rem;
+      color: #fff;
+    }
+
+    &--text {
+      max-width: calc(50rem - 4rem);
+      margin: 0 auto;
+      padding: 1rem 2rem;
+      font-size: 1.7rem;
+      background-color: $lightGrey;
+    }
+  }
+}
+
+.vizija__bulletList,
+.vrednote__bulletList,
+.poslovanje__bulletList {
+  list-style-type: square;
+
+  &--bulletItem {
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+  }
+}
+
+// icons
+.icon {
+  font-size: 2rem;
+  color: #777;
+}
+
+.plusIconBorder,
+.plusIconBorderVizija,
+.plusIconBorderVrednote {
+  @include centering;
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+}
+
+.plusIconMinus,
+.plusIconMinusVizija,
+.plusIconMinusVrednote {
+  position: relative;
+  width: 70%;
+  height: 0.3rem;
+  background-color: #fff;
+  transition: transform 0.4s;
+  cursor: pointer;
+}
+
+.plusIconPlus {
+  position: absolute;
+  width: 70%;
+  height: 0.3rem;
+  background-color: #fff;
+  transform: rotate(0deg);
+  transition: transform 0.4s;
+}
+
+.plusIconPlusVizija,
+.plusIconPlusVrednote {
+  position: absolute;
+  width: 70%;
+  height: 0.3rem;
+  background-color: #fff;
+  transform: rotate(90deg);
+  transition: transform 0.4s;
+}
+
+@media (max-width: 500px) {
+  .predstavitev__content--text {
+    margin-left: 4rem;
+  }
+}

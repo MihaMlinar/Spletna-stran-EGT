@@ -1,0 +1,70 @@
+.pravnoObvestilo {
+  position: fixed;
+  background-color: rgba(black, 0.8);
+  width: 100vw;
+  height: 100vh;
+  z-index: 5000;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__container {
+    width: 1200rem;
+    max-width: 90%;
+    max-height: 90%;
+    background-color: rgba($primaryColor, 1);
+    padding: 4rem 0;
+    border-radius: 0.5rem;
+    background-color: #fff;
+    overflow: scroll;
+    position: relative;
+
+    &--heading {
+      width: 100%;
+      background-color: #333f49;
+      position: absolute;
+      top: 0;
+      color: #fff;
+      font-size: 1.8rem;
+      padding: 2rem;
+    }
+  }
+
+  &__closingIcon {
+    position: absolute;
+    top: 3.5rem;
+    right: 2rem;
+    width: 2rem;
+    height: 0.4rem;
+    border-radius: 0.5rem;
+    background-color: #fff;
+    z-index: 6000;
+    transform: rotate(45deg);
+    cursor: pointer;
+  }
+
+  &__closingIcon::after {
+    content: "";
+    position: absolute;
+    width: 2rem;
+    height: 0.4rem;
+    border-radius: 0.5rem;
+    background-color: #fff;
+    transform: rotate(90deg);
+  }
+
+  &__textContainer {
+    display: flex;
+    flex-flow: column wrap;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 5rem;
+
+    & p {
+      margin-bottom: 2rem;
+      font-size: 1.7rem;
+    }
+  }
+}

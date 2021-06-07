@@ -1,0 +1,149 @@
+.navigation {
+  @include navBG;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__logo {
+    width: 20rem;
+    height: auto;
+    padding: 2rem;
+  }
+
+  &__burgerMenu {
+    position: fixed;
+    z-index: 4500;
+    right: 2rem;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 0.8rem;
+    background-color: #777;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s linear;
+
+    &--background {
+      position: fixed;
+      z-index: 4000;
+      right: 2rem;
+      width: 4rem;
+      height: 4rem;
+      border-radius: 0.8rem;
+      background-color: #777;
+      transition: width 0.4s linear;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    // when clicked - for mobile
+    &:hover ~ &--background.openNav {
+      width: 30rem;
+      max-width: 90%;
+    }
+
+    &--background.openNav ul {
+      list-style-type: none;
+      width: 100%;
+      color: #fff;
+      font-size: 1.6rem;
+      display: flex;
+    }
+
+    &--background.openNav ul li a {
+      text-decoration: none;
+      color: white;
+    }
+
+    &--line {
+      position: relative;
+      background-color: white;
+      padding: 0.18rem;
+      border-radius: 2rem;
+      width: 2.5rem;
+      transition: all 0.2s;
+    }
+    &--line::after {
+      content: "";
+      position: absolute;
+      background-color: white;
+      width: 100%;
+      border-radius: 2rem;
+      padding: 0.18rem;
+      right: 0;
+      top: 0.7rem;
+      transition: transform 0.4s;
+    }
+    &--line::before {
+      content: "";
+      position: absolute;
+      background-color: white;
+      width: 100%;
+      border-radius: 2rem;
+      padding: 0.18rem;
+      right: 0;
+      bottom: 0.7rem;
+      transition: transform 0.4s;
+    }
+
+    &:hover &--line {
+      transform: rotate(-130deg);
+    }
+
+    &:hover &--line::after {
+      top: 0;
+      transform: rotate(80deg);
+    }
+
+    &:hover &--line::before {
+      top: 0;
+      opacity: 0;
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+@media (min-width: 500px) {
+  .navigation__burgerMenu {
+    display: none;
+  }
+
+  .navigation__burgerMenu--background {
+    position: relative;
+    width: 30rem;
+    max-width: 90%;
+    & ul {
+      background-color: #777;
+      justify-content: center;
+    }
+
+    & li {
+      background-color: #777;
+      padding: 1.5rem;
+    }
+
+    & li:hover {
+      font-weight: bold;
+      transform: scale(1.1);
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .navigation__burgerMenu--background {
+    & li {
+      background-color: #777;
+      padding: 1rem;
+    }
+
+    & li:hover {
+      font-weight: bold;
+      transform: scale(1.1);
+    }
+  }
+}

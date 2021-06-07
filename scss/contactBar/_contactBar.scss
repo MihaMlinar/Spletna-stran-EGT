@@ -1,0 +1,101 @@
+.contactBar {
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-color: $lightGrey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  &__phone,
+  &__email,
+  &__location {
+    display: flex;
+    align-items: center;
+    width: auto;
+    font-size: 1.7rem;
+  }
+
+  &__phone {
+    &--iconBorder {
+      border: 1px solid $secundaryColor;
+      padding: 0.2rem;
+      margin: 0.2rem;
+      background-color: #fff;
+      width: 3rem;
+      height: 3rem;
+      @include centering;
+    }
+
+    &--icon {
+      font-size: 2rem;
+      color: $primaryColor;
+    }
+
+    &--text {
+      margin: 0 0.5rem;
+      font-weight: bold;
+      color: $textColor;
+    }
+  }
+
+  &__email {
+    &--iconBorder {
+      @include centering;
+      width: 3rem;
+      height: 3rem;
+      border: 1px solid $secundaryColor;
+      padding: 0.2rem;
+      margin: 0.2rem;
+      background-color: #fff;
+    }
+
+    &--icon {
+      font-size: 2rem;
+      color: $primaryColor;
+    }
+
+    &--text {
+      margin: 0 0.5rem;
+      font-weight: bold;
+      color: $textColor;
+    }
+  }
+
+  &__location {
+    &--iconBorder {
+      @include centering;
+      border: 1px solid $secundaryColor;
+      width: 3rem;
+      height: 3rem;
+      padding: 0.2rem;
+      margin: 0.2rem;
+      background-color: #fff;
+    }
+
+    &--icon {
+      font-size: 2rem;
+      color: $primaryColor;
+    }
+
+    &--text {
+      margin: 0 0.5rem;
+      font-weight: bold;
+      color: $textColor;
+    }
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .contactBar__location {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 270px) {
+  .contactBar__location,
+  .contactBar__email {
+    display: none;
+  }
+}

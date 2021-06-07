@@ -1,0 +1,32 @@
+.zaupanje {
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+  padding: 2rem 0;
+
+  &__layoutContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+
+.firmImg {
+  width: 20rem;
+  height: auto;
+  transition: all 0.2s linear;
+  filter: grayscale(100%);
+  margin: 2rem;
+}
+
+.firmImg:nth-of-type(3) {
+  background-color: #333;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.firmImg:hover {
+  transform: scale(1.2);
+  filter: grayscale(0);
+}
