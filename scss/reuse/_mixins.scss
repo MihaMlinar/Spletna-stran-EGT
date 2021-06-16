@@ -30,3 +30,7 @@
   color: $color;
   transition: transform 0.2s;
 }
+
+@mixin hiddingText {
+  visibility: hidden;
+}

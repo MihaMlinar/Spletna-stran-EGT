@@ -9,6 +9,7 @@
   &__vzdrževanje,
   &__realizacija {
     display: flex;
+    width: 33.33%;
     padding: 1rem;
   }
 
@@ -52,6 +53,7 @@
   .storitve__realizacija {
     flex-direction: column;
     align-items: center;
+    width: 100%;
   }
   .storitve__desc--heading {
     margin-top: 1rem;
@@ -59,6 +61,14 @@
   }
   .storitve__desc--text {
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .storitve__svetovanje,
+  .storitve__vzdrževanje,
+  .storitve__realizacija {
+    width: 100%;
   }
 }
 

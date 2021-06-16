@@ -78,6 +78,10 @@
   transform: rotate(90deg);
 }
 
+.textHidden {
+  @include hiddingText;
+}
+
 @media (min-width: 700px) {
   .rešitve__celota--dropDownArrowBorder {
     display: none;

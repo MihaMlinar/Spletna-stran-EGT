@@ -5,6 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <!-- <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" /> -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon-16x16.png"
+    />
+    <link rel="manifest" href="img/site.webmanifest" />
+    <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#000000" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -15,6 +38,10 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap"
       rel="stylesheet"
+    />
+    <meta
+      name="description"
+      content="Vaš sogovornik za IKT tehnologije! Nudimo profesionalne in kakovostne rešitve na vseh področjih informacijskih tehnologij!"
     />
     <script src="./script/main.js" defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -86,7 +113,7 @@
               <h3 class="storitve__desc--heading">SVETOVANJE</h3>
               <p class="storitve__desc--text">
                 Ker, smo specialisti na področju sistemskih rešitev in njihovih
-                integracij vam lahko tudi svetujemo na tem področju.
+                integracij vam lahko svetujemo pri vaših odločitvah.
               </p>
             </div>
           </section>
@@ -97,8 +124,8 @@
             <div class="storitve__desc">
               <h3 class="storitve__desc--heading">VZDRŽEVANJE</h3>
               <p class="storitve__desc--text">
-                Ker, smo specialisti na področju sistemskih rešitev in njihovih
-                integracij vam lahko tudi svetujemo na tem področju.
+                Vzdržujemo naše storitve, podatkovne baze in nudimo sistemsko
+                podporo.
               </p>
             </div>
           </section>
@@ -109,8 +136,8 @@
             <div class="storitve__desc">
               <h3 class="storitve__desc--heading">REALIZACIJA</h3>
               <p class="storitve__desc--text">
-                Ker, smo specialisti na področju sistemskih rešitev in njihovih
-                integracij vam lahko tudi svetujemo na tem področju.
+                Vaše zamisli informacijske arhitekture lahko realizirate z našo
+                pomočjo.
               </p>
             </div>
           </section>
@@ -212,120 +239,134 @@
         <header class="naslov">
           <h2>REŠITVE</h2>
         </header>
-        <div class="rešitve__celota mb-2 clickRešitev1">
-          <i class="fab fa-windows rešitve__celota--icon"></i>
-          <p class="rešitve__celota--text">Microsoft rešitve</p>
-          <div class="rešitve__celota--dropDownArrowBorder">
-            <i
-              class="fas fa-chevron-down rešitve__celota--arrow"
-              id="arrow1"
-            ></i>
+        <div class="rešitve__container">
+          <div class="rešitve__container--gridItemOne">
+            <div class="rešitve__celota mb-2 clickRešitev1">
+              <i class="fab fa-windows rešitve__celota--icon"></i>
+              <p class="rešitve__celota--text">Microsoft rešitve</p>
+              <div class="rešitve__celota--dropDownArrowBorder">
+                <i
+                  class="fas fa-chevron-down rešitve__celota--arrow"
+                  id="arrow1"
+                ></i>
+              </div>
+            </div>
+            <div class="rešitve__celota--content add" id="content1">
+              <p class="rešitve__celota--textContent">
+                Danes najbolj razširjena Windows platforma zahteva od nas
+                optimalno rešitev. <br />
+                Na podlagi dolgoletnih izkušenj naših strokovnjakov vam nudimo
+                svetovanje in implementacijo različnih rešitev.
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="rešitve__celota--content add" id="content1">
-          <p class="rešitve__celota--textContent">
-            Danes najbolj razširjena Windows platforma zahteva od nas optimalno
-            rešitev. <br />
-            Na podlagi dolgoletnih izkušenj naših strokovnjakov vam nudimo
-            svetovanje in implementacijo različnih rešitev.
-          </p>
-        </div>
-        <div class="rešitve__celota mb-2 clickRešitev2">
-          <i class="fas fa-wifi rešitve__celota--icon wifi"></i>
-          <p class="rešitve__celota--text">WiFi</p>
-          <div class="rešitve__celota--dropDownArrowBorder">
-            <i
-              class="fas fa-chevron-left rešitve__celota--arrow"
-              id="arrow2"
-            ></i>
+          <div class="rešitve__container--gridItemTwo">
+            <div class="rešitve__celota mb-2 clickRešitev2">
+              <i class="fas fa-wifi rešitve__celota--icon wifi"></i>
+              <p class="rešitve__celota--text">WiFi</p>
+              <div class="rešitve__celota--dropDownArrowBorder">
+                <i
+                  class="fas fa-chevron-left rešitve__celota--arrow"
+                  id="arrow2"
+                ></i>
+              </div>
+            </div>
+            <div class="rešitve__celota--content" id="content2">
+              <p class="rešitve__celota--textContent">
+                Zaradi potreb po vedno večji mobilnosti, prilagodljivosti, so se
+                uspešna podjetja primorana prilagajati in vpeljevati brezžična
+                omrežja svoja poslovna okolja.<br />
+                Nudimo vam svetovanje pri načrtovanju brezžičnega sistema,
+                potrebni izvedbi varnosti, ter implementacijo celovitih rešitev
+                na področju brezžičnih komunikacij.
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="rešitve__celota--content" id="content2">
-          <p class="rešitve__celota--textContent">
-            Zaradi potreb po vedno večji mobilnosti, prilagodljivosti, so se
-            uspešna podjetja primorana prilagajati in vpeljevati brezžična
-            omrežja svoja poslovna okolja.<br />
-            Nudimo vam svetovanje pri načrtovanju brezžičnega sistema, potrebni
-            izvedbi varnosti, ter implementacijo celovitih rešitev na področju
-            brezžičnih komunikacij.
-          </p>
-        </div>
-        <div class="rešitve__celota clickRešitev3 mb-2">
-          <i class="fas fa-server rešitve__celota--icon"></i>
-          <p class="rešitve__celota--text">Podatkovni Center</p>
-          <div class="rešitve__celota--dropDownArrowBorder">
-            <i
-              class="fas fa-chevron-left rešitve__celota--arrow"
-              id="arrow3"
-            ></i>
+          <div class="rešitve__container--gridItemThree">
+            <div class="rešitve__celota clickRešitev3 mb-2">
+              <i class="fas fa-server rešitve__celota--icon"></i>
+              <p class="rešitve__celota--text">Podatkovni Center</p>
+              <div class="rešitve__celota--dropDownArrowBorder">
+                <i
+                  class="fas fa-chevron-left rešitve__celota--arrow"
+                  id="arrow3"
+                ></i>
+              </div>
+            </div>
+            <div class="rešitve__celota--content" id="content3">
+              <p class="rešitve__celota--textContent">
+                Podatkovni centri danes zahtevajo povečano previdnost pri
+                načrtovanju infrastrukturnih posegov znotraj organizacij.
+                Investicija mora opravičiti pričakovanja, ter upoštevati trende
+                hitro spreminjajočih se IT tehnologij. Pomagali vam bomo pri
+                načrtovanju podatkovnega centra, ustrezni pripravi sistema za
+                napajanje in hlajenje, ter optimalni izbiri opreme za postavitev
+                celotnega podatkovnega centra.
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="rešitve__celota--content" id="content3">
-          <p class="rešitve__celota--textContent">
-            Podatkovni centri danes zahtevajo povečano previdnost pri
-            načrtovanju infrastrukturnih posegov znotraj organizacij.
-            Investicija mora opravičiti pričakovanja, ter upoštevati trende
-            hitro spreminjajočih se IT tehnologij. Pomagali vam bomo pri
-            načrtovanju podatkovnega centra, ustrezni pripravi sistema za
-            napajanje in hlajenje, ter optimalni izbiri opreme za postavitev
-            celotnega podatkovnega centra.
-          </p>
-        </div>
-        <div class="rešitve__celota clickRešitev4 mb-2">
-          <i class="fas fa-archive rešitve__celota--icon"></i>
-          <p class="rešitve__celota--text">Arhiviranje</p>
-          <div class="rešitve__celota--dropDownArrowBorder">
-            <i
-              class="fas fa-chevron-left rešitve__celota--arrow"
-              id="arrow4"
-            ></i>
+          <div class="rešitve__container--gridItemFour">
+            <div class="rešitve__celota clickRešitev4 mb-2">
+              <i class="fas fa-archive rešitve__celota--icon"></i>
+              <p class="rešitve__celota--text">Arhiviranje</p>
+              <div class="rešitve__celota--dropDownArrowBorder">
+                <i
+                  class="fas fa-chevron-left rešitve__celota--arrow"
+                  id="arrow4"
+                ></i>
+              </div>
+            </div>
+            <div class="rešitve__celota--content" id="content4">
+              <p class="rešitve__celota--textContent">
+                Podatki so tisti, ki resnično štejejo.<br />
+                Da bo imelo vaše podjetje varno shranjene podatke in izvedeno
+                arhiviranje, vam bomo na podlagi zakonskih zahtev, notranje
+                politike podjetja in vaših želja svetovali pri načrtovanju
+                ustreznih rešitev za varovanje podatkov.
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="rešitve__celota--content" id="content4">
-          <p class="rešitve__celota--textContent">
-            Podatki so tisti, ki resnično štejejo.<br />
-            Da bo imelo vaše podjetje varno shranjene podatke in izvedeno
-            arhiviranje, vam bomo na podlagi zakonskih zahtev, notranje politike
-            podjetja in vaših želja svetovali pri načrtovanju ustreznih rešitev
-            za varovanje podatkov.
-          </p>
-        </div>
-        <div class="rešitve__celota clickRešitev5 mb-2">
-          <i class="fas fa-house-user rešitve__celota--icon"></i>
-          <p class="rešitve__celota--text">Hosting</p>
-          <div class="rešitve__celota--dropDownArrowBorder">
-            <i
-              class="fas fa-chevron-left rešitve__celota--arrow"
-              id="arrow5"
-            ></i>
+          <div class="rešitve__container--gridItemFive">
+            <div class="rešitve__celota clickRešitev5 mb-2">
+              <i class="fas fa-house-user rešitve__celota--icon"></i>
+              <p class="rešitve__celota--text">Hosting</p>
+              <div class="rešitve__celota--dropDownArrowBorder">
+                <i
+                  class="fas fa-chevron-left rešitve__celota--arrow"
+                  id="arrow5"
+                ></i>
+              </div>
+            </div>
+            <div class="rešitve__celota--content" id="content5">
+              <p class="rešitve__celota--textContent">
+                Dejstvo je, da se vedno več rešitev seli v oblak. Nudimo vam
+                svetovanje na področju optimalne izbire vrste gostovanja
+                (hosting). Na podlagi vaših želja in zahtev, vam lahko ponudimo
+                optimalno rešitev v oblaku, ki vam bo omogočala dovolj veliko
+                razpoložljivost, varnost, ter ekonomsko sprejemljivo ceno.
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="rešitve__celota--content" id="content5">
-          <p class="rešitve__celota--textContent">
-            Dejstvo je, da se vedno več rešitev seli v oblak. Nudimo vam
-            svetovanje na področju optimalne izbire vrste gostovanja (hosting).
-            Na podlagi vaših želja in zahtev, vam lahko ponudimo optimalno
-            rešitev v oblaku, ki vam bo omogočala dovolj veliko razpoložljivost,
-            varnost, ter ekonomsko sprejemljivo ceno.
-          </p>
-        </div>
-        <div class="rešitve__celota clickRešitev6 mb-2">
-          <i class="fas fa-headset rešitve__celota--icon"></i>
-          <p class="rešitve__celota--text">Sistemska podpora</p>
-          <div class="rešitve__celota--dropDownArrowBorder">
-            <i
-              class="fas fa-chevron-left rešitve__celota--arrow"
-              id="arrow6"
-            ></i>
+          <div class="rešitve__container--gridItemSix">
+            <div class="rešitve__celota clickRešitev6 mb-2">
+              <i class="fas fa-headset rešitve__celota--icon"></i>
+              <p class="rešitve__celota--text">Sistemska podpora</p>
+              <div class="rešitve__celota--dropDownArrowBorder">
+                <i
+                  class="fas fa-chevron-left rešitve__celota--arrow"
+                  id="arrow6"
+                ></i>
+              </div>
+            </div>
+            <div class="rešitve__celota--content" id="content6">
+              <p class="rešitve__celota--textContent">
+                Za delovanje vaših sistemov ob morebitnih izpadih, vam nudimo
+                širok nabor sistemske podpore na najvišjem nivoju.<br />
+                Nudimo vam različen nabor vzdrževanja, pomoč pri nadgradnjah,
+                planiranje nadaljnjega razvoja in svetovanje.
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="rešitve__celota--content" id="content6">
-          <p class="rešitve__celota--textContent">
-            Za delovanje vaših sistemov ob morebitnih izpadih, vam nudimo širok
-            nabor sistemske podpore na najvišjem nivoju.<br />
-            Nudimo vam različen nabor vzdrževanja, pomoč pri nadgradnjah,
-            planiranje nadaljnjega razvoja in svetovanje.
-          </p>
         </div>
       </article>
       <article class="ZakajZaupatiNam">

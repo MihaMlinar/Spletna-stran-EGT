@@ -1,0 +1,7 @@
+@media screen and (min-width: 700px) {
+  .rešitve__container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+  }
+}

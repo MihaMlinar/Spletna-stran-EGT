@@ -242,6 +242,7 @@
   padding: 2rem 0; }
   .storitve__svetovanje, .storitve__vzdrževanje, .storitve__realizacija {
     display: flex;
+    width: 33.33%;
     padding: 1rem; }
   .storitve__vzdrževanje {
     background-color: #f7f7f7; }
@@ -272,12 +273,19 @@
   .storitve__vzdrževanje,
   .storitve__realizacija {
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    width: 100%; }
   .storitve__desc--heading {
     margin-top: 1rem;
     text-align: center; }
   .storitve__desc--text {
     text-align: center; } }
+
+@media screen and (max-width: 650px) {
+  .storitve__svetovanje,
+  .storitve__vzdrževanje,
+  .storitve__realizacija {
+    width: 100%; } }
 
 @media screen and (min-width: 650px) {
   .storitve__layout {
@@ -355,9 +363,18 @@
 .rotateArrowOpen {
   transform: rotate(90deg); }
 
+.textHidden {
+  visibility: hidden; }
+
 @media (min-width: 700px) {
   .rešitve__celota--dropDownArrowBorder {
     display: none; } }
+
+@media screen and (min-width: 700px) {
+  .rešitve__container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto; } }
 
 .predstavitev {
   width: 100%;
@@ -748,7 +765,7 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-    background-color: #777777;
+    background-color: #999999;
     color: white;
     box-shadow: 0 0 0.25em rgba(0, 0, 0, 0.25);
     padding: 1rem 1rem;
