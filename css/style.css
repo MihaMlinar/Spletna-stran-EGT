@@ -812,9 +812,9 @@ body {
 
 .live-call {
   position: fixed;
-  bottom: 20px;
+  bottom: 50px;
   right: 20px;
-  width: 50px;
+  width: 150px;
   max-width: 200px;
   height: 50px;
   border-radius: 5px;
@@ -829,7 +829,13 @@ body {
     color: #fff;
     text-align: center;
     text-decoration: none;
-    padding: 1rem; }
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px; }
+  .live-call--help {
+    font-size: 1.9rem; }
   .live-call i.fas.fa-link {
     font-size: 3rem; }
 
