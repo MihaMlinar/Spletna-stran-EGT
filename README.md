@@ -9,3 +9,10 @@ npm i
 
 build css:
 npm run sass
+
+Files for prod:
+
+- index.html
+- css/style.css
+- img/\*
+- script/main.js
